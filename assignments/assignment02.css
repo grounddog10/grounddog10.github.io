@@ -53,7 +53,12 @@ span.c{
 }
 
 /*Part C*/
-
+img[alt="cat icon"]{
+  position:fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
 
 /* --- pre-existing css --- */
 .stripey tr:nth-child(even) {
