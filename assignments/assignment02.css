@@ -52,6 +52,9 @@ span.c{
   display: inline-block;
 }
 
+/*Part C*/
+
+
 /* --- pre-existing css --- */
 .stripey tr:nth-child(even) {
   background-color: gray;
