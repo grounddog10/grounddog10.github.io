@@ -20,7 +20,7 @@ body{
 
 <!-- Changes the left margin of everything with class attribute classy -->
 .classy {
-   margin-left: 50px;
+   margin-left: 10px;
 }
 
 /* --- pre-existing css --- */
