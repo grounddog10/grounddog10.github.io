@@ -8,10 +8,15 @@
 
 */
 
+<!-- sets the backgound of the body to be sky blue -->
 body{
   background-color: skyblue; 
 }
 
+<!-- Gives everything with id igottabeam a font family -->
+#igottabeme{
+   font-family: Arial, Helvetica, sans-serif;
+}
 
 /* --- pre-existing css --- */
 .stripey tr:nth-child(even) {
