@@ -66,6 +66,17 @@ img[alt="dog icon"]{
   bottom: 150px;
 }
 
+#positionMe{
+  background-color: orange;
+}
+
+img[alt="bird icon"]{
+  position:absolute;
+  padding-top: 50px;
+  padding-left: 250px;
+  z-index: 1;
+}
+
 /* --- pre-existing css --- */
 .stripey tr:nth-child(even) {
   background-color: gray;
