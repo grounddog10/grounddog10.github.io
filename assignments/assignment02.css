@@ -39,6 +39,19 @@ span{
   background-color: yellow;
 }
 
+span.a{
+  word-wrap: normal;
+}
+
+span.b{
+  display: block;
+}
+
+span.c{
+  word-wrap: normal;
+  display: inline-block;
+}
+
 /* --- pre-existing css --- */
 .stripey tr:nth-child(even) {
   background-color: gray;
