@@ -77,6 +77,16 @@ img[alt="bird icon"]{
   z-index: 1;
 }
 
+nav{
+  position: sticky;
+  top:0;
+  right:0;
+  z-index: 2;
+  background-color: rgba(51, 170, 51, .9);
+  padding: 5px;
+  font-size: 20px; 
+}
+
 /* --- pre-existing css --- */
 .stripey tr:nth-child(even) {
   background-color: gray;
