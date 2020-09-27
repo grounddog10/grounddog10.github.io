@@ -10,25 +10,29 @@
 
 
 /* Part A */
+
+/*Problem 2*/
 body{
   background-color: skyblue; 
 }
 
-
+/*Problem 3*/
 #igottabeme{
    font-family: Arial, Helvetica, sans-serif;
 }
 
-
+/*Problem 4*/
 .classy{
    margin-left: 10px;
 }
 
 /*Part B */
+/*Problem 5*/
 div{
   margin-bottom: 50px; 
 }
 
+/*Problem 6*/
 span{
   width: 100px;
   height: 50px;
@@ -39,6 +43,7 @@ span{
   background-color: yellow;
 }
 
+/*Problem 7*/
 span.a{
   word-wrap: normal;
 }
@@ -53,6 +58,7 @@ span.c{
 }
 
 /*Part C*/
+/*Problem 8*/
 img[alt="cat icon"]{
   position:fixed;
   right: 0;
@@ -60,12 +66,14 @@ img[alt="cat icon"]{
   z-index: 1;
 }
 
+/*Problem 9*/
 img[alt="dog icon"]{
   position: relative;
   right: 50px;
   bottom: 150px;
 }
 
+/*Problem 10*/
 #positionMe{
   background-color: orange;
 }
@@ -77,6 +85,7 @@ img[alt="bird icon"]{
   z-index: 1;
 }
 
+/*Problem 11*/
 nav{
   position: sticky;
   top:0;
