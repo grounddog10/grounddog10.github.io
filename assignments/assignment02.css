@@ -19,7 +19,7 @@ body{
 }
 
 <!-- Changes the left margin of everything with class attribute classy -->
-.classy{
+.classy {
    margin-left: 50px;
 }
 
