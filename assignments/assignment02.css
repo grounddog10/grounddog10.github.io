@@ -8,6 +8,8 @@
 
 */
 
+
+/* Part A */
 body{
   background-color: skyblue; 
 }
@@ -21,6 +23,12 @@ body{
 .classy{
    margin-left: 10px;
 }
+
+/*Part B */
+DIV{
+  margin-bottom: 50px; 
+}
+
 
 /* --- pre-existing css --- */
 .stripey tr:nth-child(even) {
