@@ -207,7 +207,7 @@
   
   for(let i = 1; i <= 18; i++){
       elem[i].children[5].children[0].onclick 
-  = function(){elem.children[2].innerHTML = "-"; elem.children[3].innerHTML = "-";};
+  = function(){clear(elem);};
   }
  
 // create an "add1" function
@@ -266,6 +266,12 @@ function add1 (elem) {
     elem[19].children[1].innerHTML = sumPar;
     elem[19].children[2].innerHTML = sumScore;
     elem[19].children[3].innerHTML = sumOver;
+  }
+  
+  function clear(elem){
+    elem.children[2].innerHTML = "-";
+    elem.children[3].innerHTML = "-";
+    updateTotal();
   }
   
 </script>
