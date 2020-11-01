@@ -95,7 +95,6 @@ let person = {
   lastName: "Doe",
   age: 45,
   streetAddress: "1111 center street",
-  fullAddress: function(){return this.streetAddress + " " + this.city + " " + this.zipCode},
   fullName: function() {return this.firstName  + " " + person.lastName}
 }
 document.getElementById("1A").innerHTML = person.fullName();
@@ -109,6 +108,8 @@ person.streetAddress = "123 Main Street";
 person.city = "Bay City";
 person.state = "MI";
 person.zipCode = "48708";
+person.fullAddress = function(){return person.streetAddress + " " + person.city + " " +
+	person.state" " + person.zipCode},
 document.getElementById("1B").innerHTML = person.fullAddress();
 	
 // 7. create basic DOM object
