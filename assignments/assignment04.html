@@ -89,17 +89,20 @@
 <script src='/assignments/clubMe/clubMeNow.js'></script>
 	
 <script>
-let person = { 
-firstName: "Jane", 
-lastName: "Doe", 
-age: 45, 
-fullName: function() {return this.firstName 
-+ " " + this.lastName} 
-} 
-
-
-
+let person = {
+  firstName: "Jane",
+  lastName: "Doe",
+  age: 45,
+  streetAddress: "1111 center street",
+  city: "Bay City",
+  zipCode: "48708",
+  fullAddress: function(){return this.streetAddress + " " + this.city + " " + this.zipCode},
+  fullName: function() {return this.firstName  + " " + person.lastName}
+}
 document.getElementById("1A").innerHTML = person.fullName();
+document.getElementById("1B").innerHTML = person.fullAddress();
+	
+	
 </script>
 </body>
 
