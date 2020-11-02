@@ -121,7 +121,11 @@ table2a.setAttribute("width", "100%")
 appendTableRow3(table2a,"1","2","3");
 appendTableRow3(table2a,"4","5","6");
 appendTableRow3(table2a,"7","8","9");
-
+for(let i = 0; i < 3; i++){
+  for(let j = 0; j < 3; j++){
+    table2a.children[0].children[i].children[j].setAttribute("style", "border:1px solid black;")
+  }
+}
 // Instructions
 // add a new function, appendTableRow5(), which adds 5-column rows instead of 3-column rows
 // create a 5-row by 5-column table showing the numbers, 1 through 25
@@ -139,6 +143,11 @@ appendTableRow5(table2b,"11","12","13", "14", "15");
 appendTableRow5(table2b,"16","17","18", "19", "20");
 appendTableRow5(table2b,"21","22","23", "24", "25");
 
+for(let i = 0; i < 5; i++){
+  for(let j = 0; j < 5; j++){
+    table2b.children[0].children[i].children[j].setAttribute("style", "border:1px solid black;")
+  }
+}
 // 8. create "totals" row and column in a table
 
 // Instructions
