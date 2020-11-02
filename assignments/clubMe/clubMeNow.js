@@ -4,7 +4,6 @@
 // histogram of club distances,
 // move Bootstrap files to local subdirectory so works if no Internet
 
-
 // initialize "clubs" array
 function loadClubDistances() {
 	// if "clubs" array already exists, load it from local storage
@@ -92,9 +91,18 @@ function displayclubDistanceEntryForm(c) {
 	window.location.href = "clubDistanceEntry.html"; // redirect to entry form
 }
 
+
+let lastChangedPos = 1;
+let lastMax = 0;
+let lastMin = 0;
+let lastAvg = 0;
+let lastNumShots = 0;
 // replace the current "clubs" array with the previous one
 function undoLastShot() {
-        // your code here !
+	clubs[clubRow][3] = lastAvg;
+	clubs[clubRow][4] = lastMin;
+	clubs[clubRow][5] = lastMax; 
+	clubs[clubRow][4] = lastNumShots;
 }
 
 // navigate to "About" screen
@@ -148,6 +156,10 @@ function appendTapEntryButtons() {
 
 // update distances based on user-entered value, "shotDistance"
 function updateStats(shotDistance=0) {
+	lastMin = clubs[clubrow][4];
+	lastMax = clubs[clubrow][5];
+	lastAvg = clubs[clubrow][3];
+      	lastNumShots = clubs[clubRow][6];
 	// shotDistance can be user-entered by fast-entry button or by typed input
 	// if shotDistance==0 then shotDistance was entered by typed input,
 	// so must pull shotValue from getElementById('clubVal')
