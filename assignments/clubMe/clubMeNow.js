@@ -91,18 +91,9 @@ function displayclubDistanceEntryForm(c) {
 	window.location.href = "clubDistanceEntry.html"; // redirect to entry form
 }
 
-let lastMax = 0;
-let lastMin = 0;
-let lastAvg = 0;
-let lastNumShots = 0;
 // replace the current "clubs" array with the previous one
 function undoLastShot() {
-	if(lastMax > 0){
-		clubs[clubRow][3] = lastAvg;
-		clubs[clubRow][4] = lastMin;
-		clubs[clubRow][5] = lastMax; 
-		clubs[clubRow][4] = lastNumShots;
-	}
+	clubs = JSON.parse(localStorage.getItem("clubsUndo"));
 }
 
 // navigate to "About" screen
@@ -156,10 +147,6 @@ function appendTapEntryButtons() {
 
 // update distances based on user-entered value, "shotDistance"
 function updateStats(shotDistance=0) {
-	lastMin = clubs[clubRow][4];
-	lastMax = clubs[clubRow][5];
-	lastAvg = clubs[clubRow][3];
-      	lastNumShots = clubs[clubRow][6];
 	// shotDistance can be user-entered by fast-entry button or by typed input
 	// if shotDistance==0 then shotDistance was entered by typed input,
 	// so must pull shotValue from getElementById('clubVal')
