@@ -156,9 +156,9 @@ function appendTapEntryButtons() {
 
 // update distances based on user-entered value, "shotDistance"
 function updateStats(shotDistance=0) {
-	lastMin = clubs[clubrow][4];
-	lastMax = clubs[clubrow][5];
-	lastAvg = clubs[clubrow][3];
+	lastMin = clubs[clubRow][4];
+	lastMax = clubs[clubRow][5];
+	lastAvg = clubs[clubRow][3];
       	lastNumShots = clubs[clubRow][6];
 	// shotDistance can be user-entered by fast-entry button or by typed input
 	// if shotDistance==0 then shotDistance was entered by typed input,
