@@ -91,18 +91,18 @@ function displayclubDistanceEntryForm(c) {
 	window.location.href = "clubDistanceEntry.html"; // redirect to entry form
 }
 
-
-let lastChangedPos = 1;
 let lastMax = 0;
 let lastMin = 0;
 let lastAvg = 0;
 let lastNumShots = 0;
 // replace the current "clubs" array with the previous one
 function undoLastShot() {
-	clubs[clubRow][3] = lastAvg;
-	clubs[clubRow][4] = lastMin;
-	clubs[clubRow][5] = lastMax; 
-	clubs[clubRow][4] = lastNumShots;
+	if(lastMax > 0){
+		clubs[clubRow][3] = lastAvg;
+		clubs[clubRow][4] = lastMin;
+		clubs[clubRow][5] = lastMax; 
+		clubs[clubRow][4] = lastNumShots;
+	}
 }
 
 // navigate to "About" screen
