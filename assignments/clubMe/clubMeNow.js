@@ -95,7 +95,6 @@ function displayclubDistanceEntryForm(c) {
 function undoLastShot() {
 	var str = localStorage.getItem("clubsUndo");
 	localStorage.setItem("clubs", str);
-	//loadClubDistances();
 	window.location.href = "clubDistanceList.html";
 }
 
