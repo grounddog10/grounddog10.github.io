@@ -105,7 +105,7 @@ function displayAbout() {
 
 // navigate to "Penalty Info" screen
 function displayPenaltyInfo() {
-	window.location.href = "clubPenaltyInfo.html";
+	window.alert("Warning: you are only allowed to carry 14 clubs in your golf bag in match play competition.");
 }
 
 // ----- Functions (clubDistanceEntry.html) -----
@@ -187,5 +187,9 @@ function cancelClub() {
 
 // navigate to club distance list screen
 function displayClubEntry() {
+	let rows = JSON.parse(localStorage.getItem("clubs"));
+	if(rows.length > 14){
+		displayPenaltyInfo();	
+	}
 	window.location.href = "clubEntry.html"; 
 }
