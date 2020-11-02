@@ -188,7 +188,7 @@ function cancelClub() {
 // navigate to club distance list screen
 function displayClubEntry() {
 	let rows = JSON.parse(localStorage.getItem("clubs"));
-	if(rows.length > 14){
+	if(rows.length >= 14){
 		displayPenaltyInfo();	
 	}
 	window.location.href = "clubEntry.html"; 
