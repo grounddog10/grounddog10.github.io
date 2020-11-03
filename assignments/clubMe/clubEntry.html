@@ -39,7 +39,7 @@
 	var newClubDistances;
 	
 	function addClub() {
-		newClubName = document.getElementById("clubName").innerHTML;
+		newClubName = document.getElementById("clubName").value;
                 clubs[clubs.length] = [1599, newClubName, newClubName,   0, 0, 0, 0, 60.0,   3,   3];
 		localStorage.setItem("clubs", JSON.stringify(clubs));
 	}
