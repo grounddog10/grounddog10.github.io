@@ -122,9 +122,11 @@ function loadContent() {
 	 covidJson = this.responseText;
          covidJsObj = JSON.parse(covidJson);
 	 localStorage.setItem("covidJson", covidJson);
+	      console.log("Website");
 	 
       }else{  
       	 covidJsObj = JSON.parse(localStorage.getItem("covidJson"));
+	      console.log("LocalStorage");
       }
       newConfirmedOver1000 = [];
       
