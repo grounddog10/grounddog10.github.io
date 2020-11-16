@@ -109,7 +109,7 @@ function loadContent() {
       
 	    for (let c of covidJsObj.Countries) {
         if (c.TotalConfirmed > 10000) {
-          newConfirmedOver1000.push({ 
+          totalConfirmedOver100000.push({ 
             "Slug": c.Slug, 
             "TotalConfirmed": c.TotalConfirmed, 
             "TotalDeaths": c.TotalDeaths,
@@ -118,7 +118,7 @@ function loadContent() {
           });
         }
       }
-      newConfirmedOver1000 = _.orderBy(newConfirmedOver1000, "NewDeaths", "desc");
+      totalConfirmedOver100000 = _.orderBy(totalConfirmedOver100000, "TotalConfirmedOver100000", "desc");
 
       chartData.data.datasets[0].backgroundColor 
         = "rgba(100,100,100,0.4)"; // gray
