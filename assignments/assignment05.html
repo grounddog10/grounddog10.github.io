@@ -124,7 +124,7 @@ function loadContent() {
 	 localStorage.setItem("covidJson", covidJson);
 	      console.log("Website");
 	  let localStorageUpdate = {value: "value", timestamp: new Date().getTime()};
-	  localStorage.setItem(JSON.Stringify("time", localStorageUpdate));
+	  localStorage.setItem(JSON.stringify("time", localStorageUpdate));
       }else{  
       	 covidJsObj = JSON.parse(localStorage.getItem("covidJson"));
 	      console.log("LocalStorage");
