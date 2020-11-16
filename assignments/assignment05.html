@@ -115,15 +115,13 @@ function loadContent() {
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 
         && this.status == 200) {
-      
-// 	    var str = JSON.stringify(clubs);
-// 		localStorage.setItem("clubs", str);
+
       if(localStorage.getItem("covidJson")===null || localStorage.getItem("time")===null){
 	 covidJson = this.responseText;
          covidJsObj = JSON.parse(covidJson);
 	 localStorage.setItem("covidJson", covidJson);
 	      console.log("Website");
-	  let localStorageUpdate = {value: "value", timestamp: new Date().getTime()};
+	  let localStorageUpdate = {timestamp: new Date().getTime()};
 	  localStorage.setItem("time", JSON.stringify(localStorageUpdate));
       }else{  
       	 covidJsObj = JSON.parse(localStorage.getItem("covidJson"));
