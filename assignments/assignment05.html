@@ -118,7 +118,7 @@ function loadContent() {
       
 // 	    var str = JSON.stringify(clubs);
 // 		localStorage.setItem("clubs", str);
-      if(typeof(localStorage.getItem("covidJson"))=='undefined'){
+      if(localStorage.getItem("covidJson")===null){
 	 covidJson = this.responseText;
          covidJsObj = JSON.parse(covidJson);
 	 localStorage.setItem("covidJson", covidJson);
