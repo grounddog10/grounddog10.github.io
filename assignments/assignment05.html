@@ -111,6 +111,8 @@ function loadContent() {
         if (c.NewConfirmed > 10000) {
           newConfirmedOver1000.push({ 
             "Slug": c.Slug, 
+	    "NewConfirmed" : c.NewConfirmed,
+	    "NewDeaths" : c.NewDeaths,
             "TotalConfirmed": c.TotalConfirmed, 
             "TotalDeaths": c.TotalDeaths,
             "Populations" : populations[c.Slug],
