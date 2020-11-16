@@ -116,8 +116,16 @@ function loadContent() {
     if (this.readyState == 4 
         && this.status == 200) {
       
-      covidJson = this.responseText;
-      covidJsObj = JSON.parse(covidJson);
+// 	    var str = JSON.stringify(clubs);
+// 		localStorage.setItem("clubs", str);
+      if(typeof(localStorage.getItem("username"))=='undefined'){
+	 covidJson = this.responseText;
+         covidJsObj = JSON.parse(covidJson);
+	 localStorage.setItem("covidJson", covidJson);
+	 
+      }else{  
+      	 covidJsObj = JSON.parse(localStorage.getItem("covidJson"));
+      }
       newConfirmedOver1000 = [];
       
 	    for (let c of covidJsObj.Countries) {
