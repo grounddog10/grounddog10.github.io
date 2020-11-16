@@ -118,7 +118,7 @@ function loadContent() {
 
       let time = new Date().getTime();
       let lsTime = JSON.parse(localStorage.getItem("time"));
-      if(localStorage.getItem("covidJson")===null || localStorage.getItem("time")===null || lsTime + 86400000 < time){
+      if(localStorage.getItem("covidJson")===null || localStorage.getItem("time")===null || lsTime < time){ //lsTime + 86400000 < time
 	 covidJson = this.responseText;
          covidJsObj = JSON.parse(covidJson);
 	 localStorage.setItem("covidJson", covidJson);
