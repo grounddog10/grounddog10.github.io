@@ -132,7 +132,7 @@ function loadDoc() {
   
   // pre-fill defaults for first loan year
   var defaultYear = loans[0].loan_year;
-  document.getElementById("loan_year0" + 1).value = defaultYear++;
+  $("#loan_year01").value = defaultYear++;
   var defaultLoanAmount = loans[0].loan_amount;
   document.getElementById("loan_amt0" + 1).value = defaultLoanAmount.toFixed(2);
   var defaultInterestRate = loans[0].loan_int_rate;
